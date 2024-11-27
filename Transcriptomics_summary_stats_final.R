@@ -11,7 +11,7 @@ library(car)
 
 
 # set your working directory:
-setwd("C:/Users/melan/OneDrive/Dokumente/Results/Hamlets/05a_Behavior/00_manuscript/submission/02_MolEcol/github/")
+setwd("PATH/TO/YOUR/FILES/")
 
 # load data
 htseq <- read.csv2("Transcriptomics_summary_stats.csv",header = T)
