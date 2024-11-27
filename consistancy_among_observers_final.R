@@ -17,7 +17,7 @@ library(tidyverse)
 library(car)
 
 # set to your working directory:
-setwd("C:/Users/melan/OneDrive/Dokumente/Results/Hamlets/05a_Behavior/01_analysis/escape_response_tank/observer_comparison/")
+setwd("SET/YOUR/PATH/TO/DATA/FILE")
 
 
 # load data
