@@ -17,7 +17,7 @@ library(ggsignif)
 theme_set(theme_cowplot())
 
 # set your working directory:
-setwd("C:/Users/melan/OneDrive/Dokumente/Results/Hamlets/05a_Behavior/01_analysis/OFT")
+setwd("PATH/TO/YOUR/DATA")
 
 # load data:
 df <- read.csv2("activity_assessment_data.csv",header=T)
