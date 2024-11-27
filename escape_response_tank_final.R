@@ -18,7 +18,7 @@ library(car)
 library(readxl)
 
 # set to your working directory:
-setwd("C:/Users/melan/OneDrive/Dokumente/Results/Hamlets/05a_Behavior/00_manuscript/submission/02_MolEcol/")
+setwd("ADD/PATH/TO/YOUR/DATA/FILES/")
 
 # load data:
 data <- read.csv2("Supplementary_Table_S1.csv",header=T)
