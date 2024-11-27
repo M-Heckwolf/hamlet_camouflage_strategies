@@ -81,6 +81,10 @@ plot(residuals(mod.er)~fitted(mod.er))
 boxplot(residuals(mod.er)~data2$species) # homoscedasticity of residuals
 boxplot(residuals(mod.er)~data2$observer)
 
+# model validation tests (both should be >0.05)
+leveneTest(residuals(mod.er)~data2$species) #0.09
+shapiro.test(residuals(mod.er)) #0.521
+
 
 # Result:
 # Laboratory experiments on 50 barred and 47 black hamlets showed that the escape response duration was significantly longer in barred (~0.96s) compared to black hamlets (~0.80s) (Figure 2A; LMM: Chi-squared (1) = 5.73, P = 0.017). 
@@ -230,6 +234,10 @@ mean(na.omit(data2$SDL_cm[data2$species=="barred"]))
 # model follows assumptions for homoscedasticity and normality of residuals:
 par(mfrow = c(2, 2))
 plot(mod.size)
+
+# model validation tests (both should be >0.05)
+leveneTest(residuals(mod.size)~data2$species) #0.564
+shapiro.test(residuals(mod.size)) #0.698
 
 
 # See Discussion: However, the black and barred hamlets from Bocas we used within this study did not differ in size and are representative of the size range of these populations (ANOVA; F 1,95 = 0.118; P=0.732; mean SDL (cm): blacks: 7.34, barred: 7.30). 
