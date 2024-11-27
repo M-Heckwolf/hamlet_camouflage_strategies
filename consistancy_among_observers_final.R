@@ -21,7 +21,7 @@ setwd("C:/Users/melan/OneDrive/Dokumente/Results/Hamlets/05a_Behavior/01_analysi
 
 
 # load data
-data <- read.csv2("escape_response_data_sheet_pilots_combined_dur_quad.csv",header=T)
+data <- read.csv2("consistancy_among_observers_data.csv",header=T)
 
 # calculated speed:
 data$speed <- data$duration/data$quadrants
